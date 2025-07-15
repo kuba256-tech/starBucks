@@ -1,0 +1,17 @@
+%heading {
+  font-weight: 800;
+  font-size: 37px;
+  line-height: 109%;
+  letter-spacing: -0.03em;
+}
+
+%gradient-heading {
+  font-weight: 800;
+  font-size: 37px;
+  line-height: 109%;
+  letter-spacing: -0.03em;
+  background: linear-gradient(223deg, #237249 0%, #35c66b 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

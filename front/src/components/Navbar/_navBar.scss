@@ -1,0 +1,31 @@
+@use '../../sass/abstracts/mixins' as *;
+
+.navbar {
+  margin-bottom: 2rem;
+  .navbar-left {
+    h4 {
+      @include gradient-heading(22px);
+      font-weight: 800;
+      font-size: 22px;
+      line-height: 109%;
+      letter-spacing: -0.03em;
+      background: linear-gradient(223deg, #237249 0%, #35c66b 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .navbar-right {
+    .burger {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .burger-element {
+        width: 42px;
+        height: 2px;
+        background: linear-gradient(223deg, #237249 0%, #35c66b 100%);
+      }
+    }
+  }
+}

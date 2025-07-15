@@ -1,0 +1,103 @@
+@use '../../sass/abstracts/mixins' as *;
+
+.homeSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .homeSection-content {
+    background: url('../../assets/images/logo/starBucksCup.svg') no-repeat center center/cover;
+    width: 271px;
+    height: 381px;
+    margin: 0 auto;
+    position: relative;
+    text-align: right;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100vw;
+      height: 60vh;
+      background: url('../../assets/UI/background/stringsBack.svg') no-repeat center center/cover;
+      left: 1px;
+      top: 60px;
+      z-index: -1;
+    }
+    button {
+      position: relative;
+      outline: none;
+      background: none;
+      border: none;
+      color: white;
+      .plus-button {
+        position: absolute;
+        left: 37%;
+        top: 20px;
+        font-size: 60px;
+      }
+    }
+  }
+  .homeSection-heading {
+    margin-bottom: 15px;
+    h2 {
+      margin-bottom: 10px;
+      @include heading(48px);
+      span {
+        @include gradient-heading(48px);
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 163%;
+      letter-spacing: -0.02em;
+      color: #d9d9d9;
+    }
+  }
+  .homeSection-buttons {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    button {
+      border-radius: 56px;
+      flex: 2;
+      padding: 13px;
+      font-weight: 639;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      color: #fff;
+      &:first-child {
+        background: linear-gradient(210deg, #237249 0%, #35c66b 100%);
+      }
+      &:last-child {
+        background: none;
+        flex: 1;
+      }
+    }
+  }
+  .homeSection-information {
+    display: flex;
+    justify-content: space-around;
+    .homeSection-achievement {
+      p {
+        font-size: 41px;
+        line-height: 109%;
+        letter-spacing: -0.03em;
+        color: #fff;
+        span {
+          color: #237249;
+          background: linear-gradient(244deg, #237249 0%, #35c66b 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .achivement-info {
+        font-family: var(--font-family);
+
+        font-size: 12px;
+        line-height: 144%;
+        letter-spacing: -0.02em;
+        color: #d9d9d9;
+      }
+    }
+  }
+}

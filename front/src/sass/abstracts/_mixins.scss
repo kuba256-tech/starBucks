@@ -1,0 +1,11 @@
+@use './placeholders';
+
+@mixin heading($font-size) {
+  font-size: $font-size;
+  @extend %heading;
+}
+
+@mixin gradient-heading($font-size) {
+  font-size: $font-size;
+  @extend %gradient-heading;
+}
