@@ -1,0 +1,58 @@
+@use '../../sass/abstracts/mixins' as mixin;
+
+.ourProducts {
+  .ourProducts-delicious {
+    flex-direction: column;
+    position: relative;
+    &::after {
+      z-index: -1;
+      top: 20%;
+      position: absolute;
+      content: '';
+      width: 80%;
+      height: 30vh;
+      transform: rotate(18deg);
+      background: url('../../assets/UI/background/stringsBack.svg') no-repeat center center/cover;
+    }
+    .delicious-left {
+      margin-bottom: 20px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        width: 164px;
+        height: 241px;
+        background: linear-gradient(to bottom, rgba(6, 181, 55, 0.5), rgba(255, 255, 255, 0));
+        left: 10px;
+        top: 50px;
+        z-index: -1;
+        border-radius: 0 50% 0 0;
+        opacity: 0.9;
+      }
+      img {
+        stroke-width: 1px;
+        stroke: #000;
+      }
+      .StarButton {
+        position: absolute;
+        right: 1px;
+        top: 30%;
+      }
+    }
+
+    .delicious-right {
+      h4 {
+        @include mixin.heading(53px);
+        span {
+          @include mixin.gradient-heading(53px);
+        }
+      }
+      span {
+        font-size: 13px;
+        line-height: 163%;
+        letter-spacing: -0.02em;
+        color: #d9d9d9;
+      }
+    }
+  }
+}

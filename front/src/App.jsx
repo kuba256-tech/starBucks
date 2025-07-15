@@ -1,5 +1,6 @@
 import NavBar from './components/Navbar/NavBar';
 import HomeSection from './sections/Home/HomeSection';
+import OurProducts from './sections/OurProducts/OurProducts';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       </header>
       <main>
         <HomeSection />
+        <OurProducts />
       </main>
     </div>
   );

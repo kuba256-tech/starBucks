@@ -1,0 +1,23 @@
+.homeSection-achievement {
+  p {
+    font-size: 41px;
+    line-height: 109%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    span {
+      color: #237249;
+      background: linear-gradient(244deg, #237249 0%, #35c66b 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .achivement-info {
+    font-family: var(--font-family);
+
+    font-size: 12px;
+    line-height: 144%;
+    letter-spacing: -0.02em;
+    color: #d9d9d9;
+  }
+}

@@ -2,4 +2,10 @@
 @use './base/base';
 
 @use '../components/Navbar/navBar';
+@use '../components/Achievement/achievement';
+@use '../components/WehaveItems/weHaveItem';
+@use '../components/StarButton/starButton';
+
 @use '../sections/Home/homeSection';
+@use '../sections/OurProducts/ourProducts';
+@use '../sections/NewProducts/newProducts';

@@ -1,0 +1,33 @@
+.wehave-item {
+  text-align: center;
+  position: relative;
+  img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #237249;
+    border-radius: 50%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  h4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 163%;
+    letter-spacing: -0.02em;
+    color: #121517;
+  }
+  span {
+    font-size: 11px;
+    line-height: 163%;
+    letter-spacing: -0.02em;
+    color: rgba(18, 21, 23, 0.9);
+  }
+}
