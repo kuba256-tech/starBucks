@@ -47,11 +47,7 @@
         }
       }
       p {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 163%;
-        letter-spacing: -0.02em;
-        color: #d9d9d9;
+        @extend %text-information;
       }
     }
     .homeSection-information {

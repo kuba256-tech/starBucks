@@ -1,0 +1,8 @@
+@use '../../sass/abstracts/mixins' as mixin;
+
+h3 {
+  @include mixin.heading(53px);
+  span {
+    @include mixin.gradient-heading(53px);
+  }
+}

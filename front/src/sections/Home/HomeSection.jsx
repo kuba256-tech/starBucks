@@ -4,6 +4,7 @@ import heartIcon from '../../assets/images/icons/heart.svg';
 import rockekIcon from '../../assets/images/icons/rocket.svg';
 import cashIcon from '../../assets/images/icons/cash.svg';
 import WeHaveItem from '../../components/WehaveItems/WeHaveItem';
+import SectionHeader from '../../components/SectionHeader/SectionHeader';
 
 const HomeSection = () => {
   return (
@@ -16,9 +17,7 @@ const HomeSection = () => {
       </div>
       <div className="homeSection-content-left">
         <div className="homeSection-heading">
-          <h2>
-            New Cafe <br /> by <span>StarBucks</span>
-          </h2>
+          <SectionHeader text={'New Cafe by'} gradientText={'StarBucks'} />
           <p>
             Have time to buy the most harmonious drinks in the new Starbucks coffee and don't forget about the discount!
           </p>

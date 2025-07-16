@@ -1,6 +1,7 @@
 @use '../../sass/abstracts/mixins' as mixin;
 
 .ourProducts {
+  margin-bottom: 2rem;
   .ourProducts-delicious {
     flex-direction: column;
     position: relative;
@@ -41,17 +42,15 @@
     }
 
     .delicious-right {
-      h4 {
-        @include mixin.heading(53px);
-        span {
-          @include mixin.gradient-heading(53px);
-        }
+      p {
+        @extend %text-information;
+        margin-bottom: 20px;
       }
-      span {
-        font-size: 13px;
-        line-height: 163%;
-        letter-spacing: -0.02em;
-        color: #d9d9d9;
+      video {
+        width: 100%;
+        pointer-events: none;
+        border-radius: 10%;
+        border: 1px solid white;
       }
     }
   }
