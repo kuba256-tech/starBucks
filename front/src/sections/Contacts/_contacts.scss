@@ -1,0 +1,89 @@
+@use '../../sass/abstracts/mixins';
+
+.Contacts {
+  .contacts-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    position: relative;
+    .Contacts-right-string {
+      .Contacts-string {
+        position: absolute;
+        width: 80vw;
+        height: 90%;
+        background: url('../../assets/UI/background/stringsBack.svg') no-repeat center center/cover;
+        z-index: -1;
+        transform: rotate(240deg);
+        top: 1px;
+        left: 1px;
+      }
+    }
+
+    .Contacts-right-icon {
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      .Contacts-img-background {
+        position: absolute;
+        background-color: aqua;
+        z-index: -1;
+        width: 144px;
+        height: 200px;
+        bottom: 15px;
+        right: -10px;
+        border-radius: 50% 0 0 0;
+
+        background: linear-gradient(to bottom, rgba(6, 181, 55, 0.5), rgba(255, 255, 255, 0));
+      }
+      img {
+        width: 174px;
+        height: 247px;
+      }
+    }
+  }
+
+  .contacts-left {
+    .contact-left-top {
+      margin-bottom: 1rem;
+      p {
+        @extend %text-information;
+      }
+    }
+    .contacts-left-footer {
+      display: flex;
+      flex-direction: column;
+      p {
+        padding-left: 40px;
+        position: relative;
+        font-weight: 500;
+        font-size: 21px;
+
+        color: #fff;
+      }
+
+      .intagram {
+        margin-bottom: 6%;
+      }
+      .intagram::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 0px;
+        top: -2px;
+        background: url('../../assets/images/icons/greenInstagram.svg') no-repeat center center/cover;
+      }
+      .call::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 0px;
+        top: -4px;
+        background: url('../../assets/images/icons/callIcon.svg') no-repeat center center/cover;
+      }
+    }
+  }
+}

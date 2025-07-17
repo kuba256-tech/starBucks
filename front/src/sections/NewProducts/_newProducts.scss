@@ -44,18 +44,10 @@
             justify-content: space-between;
             align-items: center;
           }
-
           button {
-            border-radius: 39px;
             width: 122px;
             height: 35px;
-            background: linear-gradient(210deg, #237249 0%, #35c66b 100%);
-
-            font-weight: 639;
-            font-size: 11px;
-            line-height: 146%;
-            letter-spacing: -0.02em;
-            color: #fff;
+            @extend %green-button;
           }
         }
       }

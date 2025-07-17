@@ -22,7 +22,7 @@ const NewProducts = () => {
         </p>
       </div>
       <div className="NewProducts-cards">
-        <Carousel>
+        <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
           <Carousel.Item className="NewProducts-card">
             <div className="NewProducts-card-content">
               <img src={picture1} alt="picture" />
@@ -52,6 +52,7 @@ const NewProducts = () => {
               </div>
             </div>
           </Carousel.Item>
+
           <Carousel.Item className="NewProducts-card">
             <div className="NewProducts-card-content">
               <img src={picture3} alt="picture" />
