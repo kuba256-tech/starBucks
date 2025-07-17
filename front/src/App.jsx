@@ -6,7 +6,7 @@ import HomeSection from './sections/Home/HomeSection';
 import NewEvents from './sections/NewEvents/NewEvents';
 import NewProducts from './sections/NewProducts/NewProducts';
 import OurProducts from './sections/OurProducts/OurProducts';
-import scrollReveal from 'scrollReveal';
+import scrollReveal from 'scrollreveal';
 
 const App = () => {
   useEffect(() => {
