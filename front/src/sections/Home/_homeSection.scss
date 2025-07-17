@@ -1,5 +1,15 @@
 @use '../../sass/abstracts/mixins' as *;
 
+@keyframes jump {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: -40px;
+  }
+}
+
 .homeSection {
   display: flex;
   justify-content: center;
@@ -21,6 +31,8 @@
     margin: 0 auto;
     position: relative;
     text-align: right;
+    animation: jump 2s infinite ease-in-out;
+
     button {
       position: relative;
       outline: none;
